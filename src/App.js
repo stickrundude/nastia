@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/nastia">  {/* Specify the base path here */}
       <Routes>
         {/* Redirect /nastia to home */}
         <Route path="/nastia" element={<Navigate to="/" />} />
