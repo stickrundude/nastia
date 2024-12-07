@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import confetti from 'canvas-confetti';
 import './QuestionPage.css';
 import image1 from '../images/q1.jpg';
 import image2 from '../images/q2.jpg';
@@ -32,6 +33,28 @@ const QuestionPage = () => {
                 left: '50%',
             });
         }
+    }, []);
+
+    useEffect(() => {
+        const startConfetti = () => {
+            const confettiInterval = setInterval(() => {
+                confetti({
+                    particleCount: 5,
+                    angle: Math.random() * 360,
+                    spread: 55,
+                    origin: {
+                        x: Math.random(),
+                        y: Math.random() * 0.5,
+                    },
+                });
+            }, 200);
+
+            return confettiInterval;
+        };
+
+        const confettiInterval = startConfetti();
+
+        return () => clearInterval(confettiInterval);
     }, []);
 
     const handleAnswer = (answer) => {
@@ -66,13 +89,13 @@ const QuestionPage = () => {
         if (currentQuestionIndex === 2) {
             navigate('/gallery');
         } else {
-            alert("Stop trying to click no!");
+            alert('Stop trying to click no!');
         }
     };
 
     const handleYesClick = () => {
         if (currentQuestionIndex === 2) {
-            alert("Stop lying!!!!");
+            alert('Stop lying!!!!');
         } else {
             handleAnswer('Yes');
         }

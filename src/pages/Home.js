@@ -22,7 +22,7 @@ function Home() {
     const kurwaAudioRef = useRef(null);
 
     useEffect(() => {
-        const countdownDate = new Date('2024-12-12T00:00:00+02:00').getTime();
+        const countdownDate = new Date('2024-12-07T17:08:30+01:00').getTime();
 
         const interval = setInterval(() => {
             const now = new Date().getTime();
@@ -33,7 +33,6 @@ function Home() {
                 setCountdown('Це твій день народження! 🎉');
                 setIsButtonEnabled(true);
                 setIsCountdownComplete(true);
-
 
                 setCurrentGif(happyGif);
 
@@ -46,7 +45,6 @@ function Home() {
                         console.error('Audio play failed:', error);
                     });
                 }
-
 
                 confetti({
                     particleCount: 200,
@@ -64,7 +62,21 @@ function Home() {
             }
         }, 1000);
 
-        return () => clearInterval(interval);
+
+        const continuousConfettiInterval = setInterval(() => {
+            confetti({
+                particleCount: 5,
+                angle: Math.random() * 360,
+                spread: 10,
+                origin: { x: Math.random(), y: -0.1 },
+                colors: ['#ff5f57', '#ffbd2e', '#28c840', '#0071ff', '#f5a623'],
+            });
+        }, 200);
+
+        return () => {
+            clearInterval(interval);
+            clearInterval(continuousConfettiInterval);
+        };
     }, []);
 
     const handleClick = () => {
