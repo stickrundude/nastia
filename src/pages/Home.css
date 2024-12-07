@@ -1,21 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
 .home-container {
     text-align: center;
     padding: 50px;
-    background-image: url('/public/background.jpg');
-    background-size: cover;
-    background-position: center;
+    position: relative;
     min-height: 100vh;
     color: white;
     font-family: 'Arial', sans-serif;
+    z-index: 1;
+    transition: filter 0.3s ease-in-out;
+}
 
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: filter 0.3s ease-in-out;
+}
+
+.blur-background {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.modal-overlay .modal p {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+
+.modal {
+    background-image: url('../images/33.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 500px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    min-height: 200px;
+}
+
+.modal button {
+    background-color: #ff5733;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.modal button:hover {
+    background-color: #e04e2c;
 }
 
 .birthday-text {
-    font-family: 'Pacifico', cursive;
-
-    font-size: 3em;
+    font-family: 'Modak', cursive;
+    font-size: 4em;
     font-weight: 700;
     padding: 20px;
     background-color: rgba(255, 221, 225, 0.7);
@@ -38,7 +103,6 @@
 
 .countdown-number {
     color: rgba(2, 138, 188, 0.8);
-
     font-weight: bold;
 }
 
@@ -50,7 +114,7 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 4px;
     transition: background-color 0.3s;
 }
 
@@ -61,4 +125,36 @@ button:disabled {
 
 button:hover {
     background-color: rgba(188, 2, 98, 0.8);
+}
+
+.button-container {
+    position: relative;
+    z-index: 1;
+}
+
+.audio-controls {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.audio-button {
+    background-color: rgba(245, 24, 245, 0.8);
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+.audio-controls button svg {
+    width: 24px;
+    height: 24px;
+}
+
+.gif-container {
+    margin-top: 20px;
 }
