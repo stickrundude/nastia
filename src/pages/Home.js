@@ -22,7 +22,7 @@ function Home() {
     const kurwaAudioRef = useRef(null);
 
     useEffect(() => {
-        const countdownDate = new Date('2024-12-07T17:08:30+01:00').getTime();
+        const countdownDate = new Date('2024-12-12T00:00:00+02:00').getTime();
 
         const interval = setInterval(() => {
             const now = new Date().getTime();
