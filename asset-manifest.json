@@ -1,16 +1,41 @@
 {
   "files": {
-    "main.css": "/nastia/static/css/main.75fdabd7.css",
-    "main.js": "/nastia/static/js/main.094d3498.js",
+    "main.css": "/nastia/static/css/main.c0e49b81.css",
+    "main.js": "/nastia/static/js/main.243c5ea3.js",
     "static/js/453.830350d2.chunk.js": "/nastia/static/js/453.830350d2.chunk.js",
+    "static/media/2.mp3": "/nastia/static/media/2.90af1604f78529b750e3.mp3",
+    "static/media/q1.jpg": "/nastia/static/media/q1.bc257de8130d7338ce3c.jpg",
+    "static/media/1.mp3": "/nastia/static/media/1.44e448c7eac49d9e5908.mp3",
+    "static/media/q2.jpg": "/nastia/static/media/q2.86762ebedd2b712e3c15.jpg",
+    "static/media/3.jpg": "/nastia/static/media/3.88c45ffd9d70c9be5555.jpg",
+    "static/media/q3.jpg": "/nastia/static/media/q3.a3e2b894f589f92c0c49.jpg",
+    "static/media/happy.gif": "/nastia/static/media/happy.dd9539bb84a198d65f54.gif",
+    "static/media/wait.gif": "/nastia/static/media/wait.6f1538dcb65e32bdfd23.gif",
     "static/media/background.jpg": "/nastia/static/media/background.d04d521368c4ed906d1c.jpg",
+    "static/media/2.jpg": "/nastia/static/media/2.78fd9ddbae36190fe576.jpg",
+    "static/media/1.jpg": "/nastia/static/media/1.4f7ce31a5dc53c0d0b17.jpg",
+    "static/media/9.jpg": "/nastia/static/media/9.8368f294200b1930a0ce.jpg",
+    "static/media/8.jpg": "/nastia/static/media/8.878231ebfef39bd5a43c.jpg",
+    "static/media/5.jpg": "/nastia/static/media/5.f165d1e0b1068eac3395.jpg",
+    "static/media/7.jpg": "/nastia/static/media/7.17defd345d03a97b13e2.jpg",
+    "static/media/6.jpg": "/nastia/static/media/6.b48def840691b8d57589.jpg",
+    "static/media/15.jpg": "/nastia/static/media/15.e57cce721e7796af271d.jpg",
+    "static/media/10.jpg": "/nastia/static/media/10.685e81f3d733909b1907.jpg",
+    "static/media/16.jpg": "/nastia/static/media/16.69dd8d1fcab783ab0f8f.jpg",
+    "static/media/13.jpg": "/nastia/static/media/13.7e7d76210ca924a66517.jpg",
+    "static/media/4.jpg": "/nastia/static/media/4.843735a7f8bcc771ca20.jpg",
+    "static/media/12.jpg": "/nastia/static/media/12.8566674053bdf07cfe78.jpg",
+    "static/media/11.jpg": "/nastia/static/media/11.abaec56e59a8efb8d082.jpg",
+    "static/media/14.jpg": "/nastia/static/media/14.7e3aa2273ef36058c4eb.jpg",
+    "static/media/33.jpg": "/nastia/static/media/33.9065ac04ce91d5d82556.jpg",
+    "static/media/kurwa.mp3": "/nastia/static/media/kurwa.8eba0e6f3f5078acc265.mp3",
     "index.html": "/nastia/index.html",
-    "main.75fdabd7.css.map": "/nastia/static/css/main.75fdabd7.css.map",
-    "main.094d3498.js.map": "/nastia/static/js/main.094d3498.js.map",
+    "main.c0e49b81.css.map": "/nastia/static/css/main.c0e49b81.css.map",
+    "main.243c5ea3.js.map": "/nastia/static/js/main.243c5ea3.js.map",
     "453.830350d2.chunk.js.map": "/nastia/static/js/453.830350d2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75fdabd7.css",
-    "static/js/main.094d3498.js"
+    "static/css/main.c0e49b81.css",
+    "static/js/main.243c5ea3.js"
   ]
 }
